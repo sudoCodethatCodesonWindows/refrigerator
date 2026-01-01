@@ -1,7 +1,7 @@
 import cv2
 from ultralytics import YOLO
 
-def run_headless_detection(input_path, output_path, model_version="yolo11m.pt"):
+def run_headless_detection(input_path, output_path, model_version="yolo11l.pt"):
     # 1. Load the model (yolov11m is the 'medium' version for ~80%+ accuracy)
     # It will automatically download the weights on the first run
     model = YOLO(model_version)
